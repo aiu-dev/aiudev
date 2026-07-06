@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Abubakar Ibrahim Umar</title>
+    <link rel="icon" type="image/png" href="images/mylogo.png">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
    <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +19,7 @@
            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;        
         color: rgb(252, 70, 5);
         margin-left: 20px;
+        padding-top:12px;
        margin-top:15;
         word-spacing: 5px;
         font-weight: 700;
@@ -57,14 +59,12 @@
         text-decoration:none;
         color:black;
     }
-  
     .homeimg a:hover{
       opacity:0.5; 
        text-decoration:none;  
        background-color:lightgrey;
        padding:6px; 
-        border-radius:16px;
-        
+        border-radius:16px;    
     }
    .main .section h2{
     padding:15px;
@@ -88,16 +88,12 @@
     text-decoration:none;
     padding:10px;
     color:black;
-  
   }
-  
  .section footer {
     text-align: center;
     padding: 30px  10px;
-    
     border-top: 1px solid #eee;
 }
-
 .section .cta-box {
     background-color: #ecf0f1!important;
     padding: 20px;
@@ -121,7 +117,6 @@
     margin-top:50px;
      margin-bottom:50px;
   }
-
  .img{
     height:200px;
     display:block;
@@ -163,13 +158,18 @@
     color:white;
     text-align:center;
   }
+  .nav{
+    display:flex
+    flex-direction:columns;
+  }
   .nav-container{
     display:flex;
     z-index:1;
     height:auto;
+    flex-direction:columns;
     transition:1s;
   }
-  .nav{
+  #nav{
     position:fixed;
     box-shadow:2px 0px 1px grey ;
     top :0;
@@ -181,31 +181,38 @@
     background-color:orange;
     animation:mymove 0.28s;
     display:none;
-    padding:20px;
+    padding:15px 0px;
     overflow-y:auto;
   }
-  .nav ul li {
-    list-style-type:none;
-    nargin:20px;
-    padding:20px;
-  }
-  .nav ul li a{
-    text-decoration:none;
-    color:black;
-    font-weight:800;
-  }
-  .nav ul li a:hover{
-    text-decoration:none;
-    color:black;
-    font-weight:800;
+  .nav ul {
+    padding: 0;
+    margin: 0;
+}
 
-  }
-  frame{
-    animation:mymove  07s;
-    
-  }
+.nav ul li {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+}
+
+.nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    box-sizing: border-box;
+}
+
+.nav ul li:hover {
+    background: azure;
+}
+  .nav > div:first-child{
+    width:100%;
+}
   .cancel{
-    margin-left:30px;
+    margin-left:195px;
     background:transparent;
     border:none;
     font-size:50px;
@@ -219,46 +226,42 @@
       display:grid;
       grid-template-columns:repeat(2, 1fr);
       gap:10px;
-    }    
-    
+    }     
   }     
     </style>
 </head>
 <body>
-
   <div class="header">
         <h2>
            AiU DeV
         </h2>
-      
-    <DIV class="homeimg">
-        <a id="navBar"><i class="fas fa-bars"></i></a>
-    </DIV>
+    <div class="homeimg">
+        <a id="navBar" ><i class="fas fa-bars"></i></a>
+    </div>
     </div>
   <div class="nav-container">
-    <div id="nav" class="nav">
+ 
+      
+    <div id="nav" class="nav"> 
       <div>
+               <button id="cancel-btn" class="cancel">&times;</button>
+       
       <ul>
                  <li class="li4"><a target="blank" href="/blog">BLOG </a></li>
-                <li class="li2"><a target="blank" href="#main">ABOUT</a></li>
+                <li class="li2"><a target="blank" href="index.html">ABOUT</a></li>
                 <li class="li3"><a target="blank" href="/resume">RESUME</a></li>
                 <li class="li5"><a target="blank" href="/projects">PROJECTS</a></li>
                  <li class="li4"><a target="blank" href="/certifications">CERTIFICATIONS </a></li>
-                <li class="li2"><a target="blank" href="/hubbies">HUBBIES</a></li>
+                <li class="li3"><a target="blank" href="/hubbies">HUBBIES</a></li>
                 <li class="li3"><a target="blank" href="/gallery">GALLERIES</a></li>
                 <li class="li5"><a target="blank" href="/skills">OTHER SKILLS</a></li>
-
-               
-                <li class="li6"><a target="blank"href="/portfolio">PORTFOLIO</a></li>
-                  
+                 <li class="li5"><a target="blank" href="/biography">BIOGRAPHY</a></li>
+                <li class="li6"><a target="blank"href="/portfolio">PORTFOLIO</a></li>  
             </ul>
         </div>
-      <div>
-        <button id="cancel-btn" class="cancel">&times;</button>
-        </div>
+      
     </div>
     <div id="overlay" class="body-content">
-  
   <div id="main" class="main">
   <section class="section">
     <h2>About AiU DeV</h2>
@@ -277,7 +280,6 @@
     <p>Bachelor in computer science  Northwest unversity Kano Nigeria present <span><a href="https://nwu.edu.ng">www.nwu.edu.ng</a></span></p>
     <p>aitshub, fullstack developement present <span><a href="https://aitshub.com.ng">www.aitshub.com.ng</a></span></p>
     <p>sololearn, web developement, present<br> <span><a href="https://sololearn.com">www.sololearn.com </a></span></p>
- 
   </section>
   </div>
    <div class="main">
@@ -286,7 +288,7 @@
     <ul>
       <dt><h3>web technologies</h3></dt>
       <dd> - HTML</dd>
-      <dd> - CSS</dd>
+     <dd> - CSS</dd>
       <dd> - JavaScript</dd>
       <dt><h3>Frameworks</h3></dt>
       <dd> - react</dd>
@@ -296,11 +298,7 @@
       <dd> - Python</dd>
       <dd> - C,C++,C#</dd>
       <dd> - Java</dd>
-    </ul> 
-    
- 
-  
-    
+    </ul>
   </section>
   </div>
   <div class="main">
@@ -312,9 +310,8 @@
      <p>- <b>data analysis and DB</b></p>
        <p>- <b>software design (UI/UX)</b></p>
       <p>- <b>project management</b></p>
-      <P><b> - software maintenance</b></P>
-    </div>
-    
+      <p><b> - software maintenance</b></p>
+    </div> 
   </section>
   </div>
   <div class="main">
@@ -330,7 +327,7 @@
      <img class="img" src="../images/mobile.jpg">
       </div>
       <div class="grid-3">
-     <p>- <b>data analysis and DB</b></p>
+     <p>- <b>data analysis and </b></p>
      <img class="img" src="../images/web.jpg">
       </div>
       <div class="grid-4">
@@ -352,8 +349,7 @@
             <li><a href="https://www.snapchat.com/add/assiddeeq2004"><i class="fab fa-snapchat-ghost"> </i></a></li>
             <li><a href="mailto:assiddeeqdev@gmail.com"><i class="fas fa-envelope"> </i></a></li>
         </div>
-      </ul>
-      
+         </ul> 
     </section>
   </div>
       <section class="section">
@@ -369,6 +365,6 @@
   </div>
   </div>
   </div>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>

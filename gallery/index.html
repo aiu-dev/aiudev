@@ -1,11 +1,11 @@
-                                                   
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, intial-scale=1.0">                                                                           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">                               >
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href ="../style.css">
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <title>certifications</title>
+  <title>galleries</title>
 <style>
       .footer{
        margin-bottom:0;
@@ -24,9 +24,61 @@
 }
 
 main {
-  flex: 1;
+      flex: 1;
+       align-items:center;
+       display:flex;
+       flex-direction:column;
+       
+}
+.heading{
+      align-items:center;
+       display:flex;
+       justify-content:center;
+       padding:20px;
+}
+.heading h1{
+    color: rgb(252, 70, 5);
+}
+.photo{
+      border-radius:30px;
+      margin-bottom:15px;
+      self-align:center;
+}
+.header{
+background-color:white;
+}
+@media (min-width:760px){
+   body main{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:5px;
+      align-items:center;
+     justify-items:center;       
+    }
+
+.photo{
+      border-radius:30px;
+      margin-bottom:15px;
+      self-align:center;
+}
+}
+@media (min-width:650px){
+   body main{      
+      display:grid;
+      grid-template-columns:repeat(2, 1fr);
+      gap:5px;
+      align-items:center;
+     justify-items:center;
+    }
+
+.photo{
+      border-radius:30px;
+      margin-bottom:15px;
+     
+}
 }
 
+  
 </style>
 </head>
 <body>
@@ -34,19 +86,21 @@ main {
         <h2>
            AiU DeV
         </h2>
-    <DIV class="homeimg">
+    <div class="homeimg">
         <a href="../index.html" target="blank"><i class="fas fa-home"></i></a>
-    </DIV>
     </div>
-  <main>
-
+    </div>
+<div class="heading"><h1>my photos</h1></div>
+<div class="main">
+  <main class="gallery-container">
+    
   </main>
-
+</div>
      <div class="footer">
      <footer class="pop-up-container" id="footer">
     <p>&copy; 2026 aiudev. All rights reserved.</p>
   </footer>
     </div>
-
+<script src="gallery.js">
 </script>
 </html>

@@ -2,7 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, intial-scale=1.0">                                                                           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">                               >
+  <meta name="viewport" content="width=device-width, intial-scale=1.0"> 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
   <link rel="stylesheet" href ="../style.css">
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
   <title>hubbies</title>
@@ -26,6 +27,45 @@
 main {
   flex: 1;
 }
+.header{
+background-color:white;
+}
+.hobbies-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.hobby-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.hobby-card:hover {
+  transform: translateY(-5px);
+}
+
+.hobby-icon {
+  font-size: 3rem;
+ color: rgb(252, 70, 5);
+  margin-bottom: 1rem;
+}
+
+.hobby-card h3 {
+  margin-bottom: 0.8rem;
+}
+
+.hobby-card p {
+  color: #555;
+  line-height: 1.6;
+}
+main h1 {
+	text-align:center;
+}
 
 </style>
 </head>
@@ -34,12 +74,61 @@ main {
         <h2>
            AiU DeV
         </h2>
-    <DIV class="homeimg">
+    <div class="homeimg">
         <a href="../index.html" target="blank"><i class="fas fa-home"></i></a>
-    </DIV>
+    </div>
     </div>
   <main>
+  <h1>My hubbies </h1>
+<div class="hobbies-container">
+  <div class="hobby-card">
+    <i class="fa-solid fa-futbol hobby-icon"></i>
+    <h3>Football</h3>
+    <p>
+      Enjoy playing and watching football, following major leagues and tournaments while appreciating teamwork and competition.
+    </p>
+  </div>
 
+  <div class="hobby-card">
+    <i class="fa-solid fa-film hobby-icon"></i>
+    <h3>Watching Movies</h3>
+    <p>
+      Passionate about exploring different movie genres and learning from inspiring stories, creativity, and cinematography.
+    </p>
+  </div>
+
+  <div class="hobby-card">
+    <i class="fa-solid fa-book-open hobby-icon"></i>
+    <h3>Reading Books</h3>
+    <p>
+      Enjoy reading books that expand knowledge, improve critical thinking, and provide new perspectives on life and technology.
+    </p>
+  </div>
+
+  <div class="hobby-card">
+    <i class="fa-solid fa-magnifying-glass hobby-icon"></i>
+    <h3>Researching</h3>
+    <p>
+      Interested in researching new ideas, technologies, and solutions to stay informed and continuously learn.
+    </p>
+  </div>
+
+  <div class="hobby-card">
+    <i class="fa-solid fa-pen-nib hobby-icon"></i>
+    <h3>Writing Novels</h3>
+    <p>
+      Enjoy creating stories and developing characters, using writing as a way to express creativity and imagination.
+    </p>
+  </div>
+
+  <div class="hobby-card">
+    <i class="fa-solid fa-code hobby-icon"></i>
+    <h3>Coding</h3>
+    <p>
+      Passionate about building websites and applications, solving problems through programming, and learning new technologies.
+    </p>
+  </div>
+</div>
   </main>
 
      <div class="footer">
@@ -47,6 +136,4 @@ main {
     <p>&copy; 2026 aiudev. All rights reserved.</p>
   </footer>
     </div>
-
-</script>
 </html>

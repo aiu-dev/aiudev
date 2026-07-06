@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, intial-scale=1.0">                                                                           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">                               >
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">                
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href ="../style.css">
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <title>other skills</title>
+  <title>Other skills</title>
 <style>
       .footer{
        margin-bottom:0;
@@ -13,6 +14,10 @@
        left:0;
        bottom:0;
 
+}
+main h1{
+	text-align:center;
+	padding:10px;;
 }
 
     body {
@@ -25,20 +30,93 @@
 main {
   flex: 1;
 }
+.header{
+background-color:white;
+}
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+   color: rgb(252, 70, 5);
+}
+
+.skill-card h3 {
+  margin-bottom: 0.8rem;
+}
+
+.skill-card p {
+  color: #555;
+  line-height: 1.6;
+}
 
 </style>
 </head>
 <body>
     <div class="header">
-        <h2>
-           AiU DeV
-        </h2>
+<h2>
+ AiU DeV
+ </h2>
     <DIV class="homeimg">
         <a href="../index.html" target="blank"><i class="fas fa-home"></i></a>
     </DIV>
     </div>
   <main>
+  <h1>other skills</h1>
+<div class="skills-container">
+  <div class="skill-card">
+    <i class="fa-solid fa-motorcycle skill-icon"></i>
+    <h3>Motorcycle Mechanical Engineer</h3>
+    <p>
+      Experienced in motorcycle maintenance, diagnostics, repairs,
+      engine servicing, and troubleshooting mechanical systems.
+    </p>
+  </div>
 
+  <div class="skill-card">
+    <i class="fa-solid fa-bolt skill-icon"></i>
+    <h3>Electrical Engineer</h3>
+    <p>
+      Skilled in electrical installations, circuit analysis,
+      troubleshooting, and maintenance of electrical systems.
+    </p>
+  </div>
+
+  <div class="skill-card">
+    <i class="fa-solid fa-gears skill-icon"></i>
+    <h3>Motorcycle Spare Parts Seller</h3>
+    <p>
+      Knowledgeable in motorcycle components, inventory management,
+      customer service, and spare parts sourcing.
+    </p>
+  </div>
+
+  <div class="skill-card">
+    <i class="fa-solid fa-computer skill-icon"></i>
+    <h3>Computer Analyst</h3>
+    <p>
+      Proficient in computer systems analysis, problem-solving,
+      software troubleshooting, and technical support.
+    </p>
+  </div>
+</div>
   </main>
 
      <div class="footer">
@@ -46,7 +124,5 @@ main {
     <p>&copy; 2026 aiudev. All rights reserved.</p>
   </footer>
     </div>
-
-</script>
 </html>
 

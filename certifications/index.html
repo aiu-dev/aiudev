@@ -8,8 +8,7 @@
   <title>certifications</title>
 <style> 
       .footer{
-       margin-bottom:0;
-      
+       margin-bottom:0;      
        right:0;
        left:0;
        bottom:0;
@@ -25,30 +24,165 @@
 
 main {
   flex: 1;
+}
+.header{
+background-color:white;
 }    
-
+.container{
+	display:flex;
+	align-items:center;
+	flex-direction:column;
+	justify-content:center;
+	padding:12px;
+	margin:20px;
+	
+}
+.container h1,.container p{
+	text-align:center;
+	padding-bottom:15px;
+}
+@media (min-width:620px){
+	.grid{
+		display:grid;
+		grid-template-columns:repeat(2,1fr);
+		justify-items:center;
+		
+	}
+}
+@media (min-width:768px){
+	.grid{
+		display:grid;
+		grid-template-columns:repeat(3,1fr)
+		gap:10px;
+		justify-items:center;
+	}
+}
 </style>
 </head>
-<body>                                                                          
+<body>
     <div class="header">
         <h2>
            AiU DeV
         </h2>
-    <DIV class="homeimg">
+    <div class="homeimg">
         <a href="../index.html" target="blank"><i class="fas fa-home"></i></a>
-    </DIV>
     </div>
-  <main>
+    </div>
+    <main>
+    <div class="grid">
+         <div class="container">
+          <h1>Internship </h1>
+          <a href="https://flexisaf.com"><img width="320px" alt="internship certificate"  src="../images/certificate.png" ></a>
+          <p>
+          Frontend Development Internship
+          Completed hands-on training in
+           frontend development by building
+            responsive web applications,
+             collaborating on projects,
+              and applying
+           industry-standard tools
+           and best practices.
+          </p>
+         </div>
+         <div class="container">
+          <h1>Intro to HTML </h1>
+          <a href="https://sololearn.com"><img width="320px" alt="internship certificate"  src="../images/htmlcertificate.jpg" ></a>
+          <p>this demonstrates the understanding
+         of basic structure of the webpage.
+         Introduction to HTML
+         
+         Learned the fundamentals of HTML,
+          including page structure, semantic elements, forms, links, images, and best
+           practices for creating accessible and well-organized web pages.
+         
+          </p>
+        </div>
+<div class="container">
+          <h1>Web design </h1>
+          <a href="https://freecodecamp.org/certification/fcc-7942e668-9b96-430d-9355-af1a3f68df7e/responsive-web-design"><img width="320px" alt="internship certificate"  src="../images/freecode.jpg" ></a>
+          <p>the legacy responsive web design 
+              from freecodecamp.
+             
+          </p>
+        </div>
 
-  </main>   
-    
+         <div class="container">
+          <h1>Intro to CSS </h1>
+          <a href="https://sololearn.com"><img width="320px" alt="internship certificate"  src="../images/csscertificate.jpg" ></a>
+          <p>
+          Introduction to CSS
+          
+          Gained knowledge of CSS styling
+           techniques, including selectors
+           , colors, typography, spacing,
+            layouts, Flexbox, Grid, and
+             responsive design principles
+           for modern websites.
+          </p>
+        </div>
+         <div class="container">
+          <h1>Intro to JavaScript </h1>
+          <a  href="https://sololearn.com" ><img width="320px" alt="internship certificate"  src="../images/Javascript.jpg" ></a>
+          <p>
+          Introduction to JavaScript
+          
+          Learned the basics of
+           JavaScript programming,
+            including variables, data types,
+             functions, loops, conditionals,
+              and DOM manipulation to create
+               interactive
+           web experiences.
+          </p>
+        </div>         
+         <div class="container">
+          <h1>JavaScript intermediate </h1>
+          <a href="https://sololearn.com" ><img width="320px" alt="internship certificate"  src="../images/jsintermediate.jpg" ></a>
+          <p>
+           JavaScript Intermediate
+           Expanded JavaScript skills by
+            working with advanced concepts
+             such as arrays, objects,
+              higher-order functions,
+               asynchronous programming,
+            and modern ES6+ features.
+          </p>
+        </div>
+         <div class="container">
+          <h1>Intro to web developement </h1>
+          <a target="blank"  href="  https://distinction.app/public-certificate/6d6dc08c-7180-49f3-a3c4-0b9c1eea7aa3   "><img width="320px" alt="internship certificate"  src="../images/webcertificate.png" ></a>
+          <p>
+          Introduction to Web Development
+          Developed a foundational
+           understanding of web development,
+            including how websites work,
+             client-server architecture,
+              front-end technologies, and web
+           development workflows.
+          </p>
+</div>
+         <div class="container">
+          <h1>Communication skills </h1>
+          <a target="blank"  href=" https://distinction.app/public-certificate/6d6dc08c-7180-49f3-a3c4-0b9c1eea7aa3  "><img width="320px" alt="internship certificate"  src="../images/communication.png" ></a>
+          <p>
+          Communication Skills
+          Strengthened professional
+           communication abilities,
+            including effective verbal
+             and written communication,
+              teamwork, active listening,
+               and workplace
+           collaboration.
+          </p>
+   </div>
+   </div>
+   </main>   
      <div class="footer">
      <footer class="pop-up-container" id="footer">
     <p>&copy; 2026 aiudev. All rights reserved.</p>
   </footer>
     </div>
-    
-</script>
+</body>
 </html>
 
 

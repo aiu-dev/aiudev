@@ -1,0 +1,200 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+     <meta name="viewport" content="width=device-width, intial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+     <link rel="stylesheet" href ="../style.css">
+     <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+   <title>galleries</title>
+  <style>
+        .footer{
+         margin-bottom:0;
+ 
+         right:0;
+         left:0;
+         bottom:0;
+ 
+  }
+ 
+      body {
+   min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+ 
+  main {
+        flex: 1;
+        align-items:center;
+         display:flex;
+         flex-direction:column;
+ 
+  }
+  .heading{
+        align-items:center;
+         display:flex;
+         justify-content:center;
+         padding:20px;
+  }
+  .heading h1{
+      color: rgb(252, 70, 5);
+  }
+  .photo{
+        border-radius:30px;
+        margin-bottom:15px;
+        self-align:center;
+  }
+  .header{
+  background-color:white;
+  }
+  @media (min-width:760px){
+    body main{
+        display:grid;
+        grid-template-columns:repeat(3, 1fr);
+        gap:5px;
+        align-items:center;
+       justify-items:center;
+      }
+ 
+  .photo{
+        border-radius:30px;
+        margin-bottom:15px;
+       self-align:center;
+  }
+  }
+  @media (min-width:650px){
+    body main{
+      display:grid;
+       grid-template-columns:repeat(2, 1fr);
+        gap:5px;
+        align-items:center;     justify-items:center;
+    }
+ 
+ .photo{
+       border-radius:30px;
+      margin-bottom:15px;
+ 
+  }
+  }
+  .biography-container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .bio-image img {
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  
+  .bio-content h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .bio-content p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  .bio-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 1rem;
+  }
+  
+  .highlight {
+    padding: 10px 15px;
+    border-radius: 25px;
+    background: #f4f4f4;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 768px) {
+    .biography-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .bio-image {
+      max-width: 250px;
+      margin: 0 auto;
+    }
+  
+    .bio-highlights {
+      justify-content: center;
+    }
+  }
+ 
+ 
+  </style>
+  </head>
+ <body>
+     <div class="header">
+         <h2>
+            AiU DeV
+         </h2>
+     <div class="homeimg">
+       <a href="../index.html" target="blank"><i class="fas fa-home"></i></a>
+   </div>
+      </div>
+ <div class="heading"><h1>Biography</h1></div>
+ <div class="main">
+  <main>
+ <div class="biography-container">
+   <div class="bio-image">
+     <img src="../images/gallery2.png" alt="Abubakar Ibrahim">
+   </div>  <div class="bio-content">
+     <h2>About Me</h2><p>
+   Hello! I'm <strong>Abubakar Ibrahim</strong>, a passionate Frontend Developer
+   dedicated to creating responsive, user-friendly, and visually appealing web
+   applications. I enjoy turning ideas into interactive digital experiences
+   through clean and efficient code.
+ </p>
+ 
+ <p>
+   My professional background extends beyond web development. I have experience
+   in motorcycle mechanics, electrical engineering, computer analysis, and
+   motorcycle spare parts sales. These experiences have strengthened my
+   problem-solving abilities, technical expertise, and attention to detail.
+ </p>
+ 
+ <p>
+   I am committed to continuous learning and personal growth. Whether I am
+   building web projects, researching new technologies, reading books, or
+   writing novels, I always strive to improve my knowledge and skills.
+ </p>
+ 
+ <p>
+   My goal is to grow as a software developer, contribute to meaningful
+   projects, and use technology to solve real-world problems while making a
+   positive impact on society.
+ </p>
+ 
+ <div class="bio-highlights">
+   <div class="highlight">💻 Frontend Developer</div>
+   <div class="highlight">⚙️ Mechanical Engineer</div>
+   <div class="highlight">⚡ Electrical Engineer</div>
+   <div class="highlight">🖥️ Computer Analyst</div>
+   <div class="highlight">✍️ Novel Writer</div>
+   <div class="highlight">⚽ Football Enthusiast</div>
+ </div>
+ 
+   </div>
+ </div>
+   </main>
+  </div>
+      <div class="footer">  
+     <footer class="pop-up-container" id="footer">
+    <p>&copy; 2026 aiudev. All rights reserved.</p>
+   </footer>
+     </div>
+ <script src="gallery.js">
+ </script>
+ </html>
