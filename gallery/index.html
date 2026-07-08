@@ -34,7 +34,9 @@ main {
 }
 .heading{
       align-items:center;
+       z-index:999;
        display:flex;
+       flex-direction:column;
        justify-content:center;
        padding:20px;
 }
@@ -47,6 +49,7 @@ main {
       self-align:center;
 }
 .header{
+z-index:1000;
 background-color:white;
 }
 @media (min-width:760px){
@@ -79,7 +82,9 @@ background-color:white;
      
 }
 }
-
+h2{
+text-align:center;
+}
   
 </style>
 </head>
@@ -92,18 +97,17 @@ background-color:white;
         <a href="../index.html" target="blank"><i class="fas fa-home"></i></a>
     </div>
     </div>
-<div class="heading"><h1>my photos</h1></div>
- <audio src="background.mp3" autoplay loop>
+<div class="heading"><h1>Media</h1>
+ <audio src="/gallery/background.mp3" controls >
 </audio>
+</div>
 <div class="main">
- <audio id="bgMusic" controls>
-</audio>
   <main class="gallery-container">
     
   </main>
- <div class="media-content">
-  <h2>my media</h2>
-  
+ 
+  <h2>Iframes and Youtube</h2>
+ <div class="media-content"> 
    <iframe src="https://audiomack.com//embed/bookingisahayagi/song/tsoro" scrolling="no" width="100%" height="252" frameborder="0" title="Tsoro"></iframe>
  <iframe src="https://audiomack.com//embed/dj-tunez/song/pami" scrolling="no" width="100%" height="252" frameborder="0" title="PAMI"></iframe>
  <iframe width="100%" height="auto" src="https://www.youtube.com/embed/qz0aGYrrlhU?si=C1U-Fcg3JQVRiWkM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
@@ -111,8 +115,6 @@ background-color:white;
  <audio src="/gallery/background.mp3" autoplay loop>
 </audio>
 </div>
- <audio id="bgMusic" autoplay loop>
-</audio>
      <div class="footer">
      <footer class="pop-up-container" id="footer">
     <p>&copy; 2026 aiudev. All rights reserved.</p>
