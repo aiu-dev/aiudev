@@ -207,6 +207,15 @@
 
 .nav ul li:hover {
     background: azure;
+transform:translateX(10px);
+box-shadow:0 6px 12px rgba(0,0,0,.2);
+
+    
+}
+
+
+.nav ul li a:hover::before{
+    transform:scaleY(1);
 }
   .nav > div:first-child{
     width:100%;
@@ -217,6 +226,77 @@
     border:none;
     font-size:50px;
   }
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#eee;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#ff6f00;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#ff9800;
+}
+.main,
+.section{
+    animation:fadeUp .7s ease;
+}
+.grid div:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 35px rgba(0,0,0,.15);
+}
+.nav ul li a::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background:#fff;
+    transform:scaleY(0);
+    transition:.3s;
+    border-radius:5px;
+}
+
+.nav ul li a:hover::before{
+    transform:scaleY(1);
+}
+
+/* =========================
+   OVERLAY
+========================= */
+
+.body-content{
+    transition:.35s;
+}
+
+.body-content.blur{
+    filter:blur(3px);
+    pointer-events:none;
+}
+
+/*=====================================
+        FADE ANIMATION
+======================================*/
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
   @keyframes mymove{
     0%{width:0;}
     100%{width:250px;}
@@ -234,7 +314,7 @@
   <div class="header">
         <h2>
            AiU DeV
-        </h2>
+ 	       </h2>
     <div class="homeimg">
         <a id="navBar" ><i class="fas fa-bars"></i></a>
     </div>
@@ -243,7 +323,7 @@
  
       
     <div id="nav" class="nav"> 
-      <div>
+     <div>
                <button id="cancel-btn" class="cancel">&times;</button>
        
       <ul>
@@ -258,7 +338,7 @@
                  <li class="li5"><a target="blank" href="/biography">BIOGRAPHY</a></li>
                 <li class="li6"><a target="blank"href="/portfolio">PORTFOLIO</a></li>  
             </ul>
-        </div>
+      </div>
       
     </div>
     <div id="overlay" class="body-content">
