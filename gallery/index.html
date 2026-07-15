@@ -4,18 +4,29 @@
   <meta name="viewport" content="width=device-width, intial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href ="../style.css">
-<script src="gallery.js" defer >
-</script>
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
   <title>galleries</title>
 <style>
-      .footer{
+      footer{
        margin-bottom:0;
-
+       position:fixed;
        right:0;
        left:0;
        bottom:0;
+       margin-top:100px;
+       padding:20px;
+       z-index:1000;
 
+}
+.header{
+   z-index:1000;
+}
+.audio-container{
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:999;
+overflow-y:auto;
 }
 
     body {
@@ -30,6 +41,7 @@ main {
        align-items:center;
        display:flex;
        flex-direction:column;
+       margin-bottom:100px;
        
 }
 .heading{
@@ -41,19 +53,14 @@ main {
 .heading {
     color: rgb(252, 70, 5);
 }
-.photo{
-      border-radius:30px;
-      margin-bottom:15px;
-      self-align:center;
-}
 .header{
 background-color:white;
 }
 @media (min-width:760px){
-   body main,.media-content{
+  .media-content{
       display:grid;
       grid-template-columns:repeat(3, 1fr);
-      gap:5px;
+      gap:55px;
       align-items:center;
      justify-items:center;       
     }
@@ -65,19 +72,13 @@ background-color:white;
 }
 }
 @media (min-width:650px){
-   body main,.media-content{      
+   .media-content{      
       display:grid;
       grid-template-columns:repeat(2, 1fr);
-      gap:5px;
+      gap:55px;
       align-items:center;
      justify-items:center;
     }
-
-.photo{
-      border-radius:30px;
-      margin-bottom:15px;
-     
-}
 }
 .media-content{
 	margin:10px;
@@ -88,7 +89,6 @@ background-color:white;
 </style>
 </head>
 <body>
-
     <div class="header">
         <h2>
            AiU DeV
@@ -97,12 +97,13 @@ background-color:white;
         <a href="../index.html" target="blank"><i class="fas fa-home"></i></a>
     </div>
     </div>
-<div class="heading"><h1>my photos</h1></div>
-<div class="main">
-  <main class="gallery-container"</main>
-  <h1 class="heading">my media<h1>
+  <h1 class="heading">my media</h1>
+<div class="audio-container">
  <audio src="background.mp3"controls>
+<source type="audio/mp3" src="background.mp3" >
 </audio>
+</div>
+<main>
 <div class="media-content">
  
    <iframe src="https://audiomack.com//embed/bookingisahayagi/song/tsoro" scrolling="no" width="100%" height="252" frameborder="0" title="Tsoro"></iframe>
@@ -111,10 +112,9 @@ background-color:white;
   <video src="../images/myvideo.mp4"width="100%"height="252" controls></video>
  </div>
 </div>
-     <div class="footer">
-     <footer class="pop-up-container" id="footer">
+</main>
+     <footer>
     <p>&copy; 2026 aiudev. All rights reserved.</p>
-  </footer>
-    </div>
-</bidy>
+   </footer>
+</body>
 </html>
