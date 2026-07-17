@@ -1,32 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href ="../style.css">
+ <script src="/gallery/gallery.js" defer>
+</script>
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
   <title>galleries</title>
 <style>
-      footer{
+      .footer{
        margin-bottom:0;
-       position:fixed;
+
        right:0;
        left:0;
        bottom:0;
-       margin-top:100px;
-       padding:20px;
-       z-index:1000;
 
-}
-.header{
-   z-index:1000;
-}
-.audio-container{
-display:flex;
-align-items:center;
-justify-content:center;
-z-index:999;
-overflow-y:auto;
 }
 
     body {
@@ -41,7 +30,6 @@ main {
        align-items:center;
        display:flex;
        flex-direction:column;
-       margin-bottom:100px;
        
 }
 .heading{
@@ -50,17 +38,22 @@ main {
        justify-content:center;
        padding:20px;
 }
-.heading {
+.heading h1{
     color: rgb(252, 70, 5);
+}
+.photo{
+      border-radius:30px;
+      margin-bottom:15px;
+      self-align:center;
 }
 .header{
 background-color:white;
 }
 @media (min-width:760px){
-  .media-content{
+   body main{
       display:grid;
       grid-template-columns:repeat(3, 1fr);
-      gap:55px;
+      gap:5px;
       align-items:center;
      justify-items:center;       
     }
@@ -72,17 +65,19 @@ background-color:white;
 }
 }
 @media (min-width:650px){
-   .media-content{      
+   body main,.media-content{      
       display:grid;
       grid-template-columns:repeat(2, 1fr);
-      gap:55px;
+      gap:5px;
       align-items:center;
      justify-items:center;
     }
+
+.photo{
+      border-radius:30px;
+      margin-bottom:15px;
+     
 }
-.media-content{
-	margin:10px;
-	padding:10px;
 }
 
   
@@ -97,24 +92,30 @@ background-color:white;
         <a href="../index.html" target="blank"><i class="fas fa-home"></i></a>
     </div>
     </div>
-  <h1 class="heading">my media</h1>
-<div class="audio-container">
- <audio src="background.mp3"controls>
-<source type="audio/mp3" src="background.mp3" >
+<div class="heading"><h1>my photos</h1></div>
+ <audio src="background.mp3" autoplay loop>
 </audio>
-</div>
-<main>
-<div class="media-content">
- 
+<div class="main">
+ <audio id="bgMusic" controls>
+</audio>
+  <main class="gallery-container">
+    
+  </main>
+ <div class="media-content">
+  <h2>my media</h2>
+  
    <iframe src="https://audiomack.com//embed/bookingisahayagi/song/tsoro" scrolling="no" width="100%" height="252" frameborder="0" title="Tsoro"></iframe>
  <iframe src="https://audiomack.com//embed/dj-tunez/song/pami" scrolling="no" width="100%" height="252" frameborder="0" title="PAMI"></iframe>
- <iframe width="100%" height="252" src="https://www.youtube.com/embed/qz0aGYrrlhU?si=C1U-Fcg3JQVRiWkM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" height="252px"></iframe>
-  <video src="../images/myvideo.mp4"width="100%"height="252" controls></video>
+ <iframe width="100%" height="auto" src="https://www.youtube.com/embed/qz0aGYrrlhU?si=C1U-Fcg3JQVRiWkM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
  </div>
+ <audio src="/gallery/background.mp3" autoplay loop>
+</audio>
 </div>
-</main>
-     <footer>
+ <audio id="bgMusic" autoplay loop>
+</audio>
+     <div class="footer">
+     <footer class="pop-up-container" id="footer">
     <p>&copy; 2026 aiudev. All rights reserved.</p>
-   </footer>
-</body>
+  </footer>
+    </div>
 </html>
